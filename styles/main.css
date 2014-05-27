@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -492,8 +493,14 @@ fieldset {
 textarea {
   resize: vertical; }
 
+@font-face {
+  font-family: 'icons';
+  src: url("../font/icons.eot?13999180");
+  src: url("../font/icons.eot?13999180#iefix") format("embedded-opentype"), url("../font/icons.woff?13999180") format("woff"), url("../font/icons.ttf?13999180") format("truetype"), url("../font/icons.svg?13999180#icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
+  font-family: "icons";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -502,18 +509,42 @@ textarea {
   width: 1em;
   text-align: center; }
 
-.icon-box:before {
-  content: '\e800'; }
+.icon-block:before {
+  content: '\e808'; }
 
-.icon-brush:before {
+/* '' */
+.icon-code:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-cog:before {
+  content: '\e807'; }
+
+/* '' */
+.icon-play:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-briefcase:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-puzzle:before {
   content: '\e802'; }
 
-.icon-stopwatch:before {
-  content: '\e801'; }
+/* '' */
+.icon-tools:before {
+  content: '\e800'; }
 
+/* '' */
 .icon-warning:before {
   content: '\e803'; }
 
+/* '' */
+.icon-key:before {
+  content: '\e801'; }
+
+/* '' */
 body {
   font-family: "proxima-nova", "proxima-nova-n4", Helvetica, Arial, sans-serif;
   color: #505050; }
@@ -540,6 +571,18 @@ p {
 article p {
   margin-bottom: 2em; }
 
+.badge-label {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  margin: 0 8px;
+  padding: 2px 5px 1px;
+  text-transform: uppercase;
+  font-size: 11px;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #dfdfdf; }
+
 /*
    Styles
    ========================================================================== */
@@ -565,6 +608,7 @@ p {
 
 a {
   color: #10559d;
+  text-decoration: none;
   -webkit-transition: all 0.15s linear;
   -moz-transition: all 0.15s linear;
   transition: all 0.15s linear; }

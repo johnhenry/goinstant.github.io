@@ -38,6 +38,7 @@ p {
 
 a {
   color: $navy;
+  text-decoration: none;
   @include transition(all .15s linear);
   &:hover {
     color: lighten($navy, 10%);
