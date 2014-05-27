@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   @include linear-gradient($navy 0%, $navy 30%, $navy-green 110%);
   h1 {
     float: left;
-    margin: 0;
+    margin: 16px 0 0;
     @include media($mobile) {
       float: none;
     }
@@ -118,7 +118,6 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: 0; right: 0;
     z-index: 0;
-    opacity: .5;
   }
   .container, nav {
     position: relative;
@@ -138,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   svg, img {
     position: relative;
-    top: 11px;
+    top: -5px;
     margin-right: $margin/2;
   }
 }

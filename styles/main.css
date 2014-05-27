@@ -667,7 +667,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   background-image: linear-gradient(#10559d 0%, #10559d 30%, #1a756e 110%); }
   #site-header h1 {
     float: left;
-    margin: 0; }
+    margin: 16px 0 0; }
     @media screen and (max-width: 700px) {
       #site-header h1 {
         float: none; } }
@@ -685,8 +685,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 0;
-    opacity: .5; }
+    z-index: 0; }
   #site-header .container, #site-header nav {
     position: relative;
     z-index: 1; }
@@ -701,7 +700,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-align: center; } }
 #site-id svg, #site-id img {
   position: relative;
-  top: 11px;
+  top: -5px;
   margin-right: 10px; }
 
 .site-nav {
