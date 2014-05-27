@@ -20,7 +20,7 @@ $('.site-nav').waypoint('sticky');
         navLinks.removeClass("active");
         navActive.addClass("active");
       }
-    }, { offset: 1 })
+    }, { offset: 50 })
     .waypoint(function(direction){
       if (direction === 'up') {
         var activeSection;
@@ -30,7 +30,7 @@ $('.site-nav').waypoint('sticky');
         navLinks.removeClass("active");
         navActive.addClass("active");
       }
-    }, { offset: -1 });
+    }, { offset: -50 });
   }
 
 /*** Smooth Scroll ***/
